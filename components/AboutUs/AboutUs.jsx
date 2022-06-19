@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { AboutUsWrapper } from "./AboutUsStyle";
 import bg from "../../assets/img/aboutusBg.png";
-import seo from "../../assets/img/aboutImg.png";
+import seo from "../../assets/img/aboutimg.png";
 import { Container } from "react-bootstrap";
 import Typography from "../Typography/Typography";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
