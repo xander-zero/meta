@@ -9,4 +9,6 @@ module.exports = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  presets: ["next/babel"],
+  swcMinify: false, // it should be false by default
 };
