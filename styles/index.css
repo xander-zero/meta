@@ -5,7 +5,7 @@ body {
 }
 
 @font-face {
-  font-family: IRANSansBold;
+  font-family: IRANSansBold, sans-serif;
   font-style: normal;
   font-weight: bold;
   src: url("../assets/fonts/IRANSans/Farsi_numerals/webFonts/fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix")

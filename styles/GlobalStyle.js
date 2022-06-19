@@ -32,3 +32,15 @@ export const Wrapper = styled.div`
     justify-content: center !important;
   }
 `;
+
+export const HeaderTitle = styled.h1`
+  color: ${({ color }) => color};
+  font-weight: ${({ weight }) => weight};
+  font-size: ${({ size }) => size};
+  text-align: ${({ textAlign }) => (textAlign ? textAlign : "")};
+  font-family: ${({ en }) => (en ? "Arial" : "IRANSans")};
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+`;
