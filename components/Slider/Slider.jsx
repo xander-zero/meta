@@ -13,6 +13,7 @@ import face2 from "../../assets/img/face2.jpg";
 import face3 from "../../assets/img/face3.jpg";
 import face4 from "../../assets/img/face4.jpg";
 import Image from "next/image";
+import { HeaderTitle } from "../../styles/GlobalStyle";
 const Slider = () => {
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
@@ -21,12 +22,17 @@ const Slider = () => {
     <Container>
       <SliderStyle>
         <div className="w-100 text-center mt-5">
-          <Typography color="#2513d1" size="20px" className="mb-0">
+          <Typography
+            textAlign="center"
+            color="#2513d1"
+            size="20px"
+            className="mb-0"
+          >
             {languageData.comment_people_title}
           </Typography>
-          <Typography color="#1e1666" size="34px">
+          <HeaderTitle color="#1e1666" size="34px">
             {languageData.comment_people_subTitle}
-          </Typography>
+          </HeaderTitle>
         </div>
         <div style={{ width: "100vm", justifyContent: "center" }}>
           <Swiper
@@ -45,10 +51,10 @@ const Slider = () => {
                 <Typography className="w-50 mx-auto" color="#6a7c92">
                   {languageData.comment_person_1}
                 </Typography>
-                <Typography color="#1e1666" className="m-0">
+                <Typography textAlign="center" color="#1e1666" className="m-0">
                   {languageData.comment_person_name_1}
                 </Typography>
-                <Typography color="#2f1ed3" className="pb-3">
+                <Typography textAlign="center" color="#2f1ed3" className="pb-3">
                   {languageData.comment_person_job_1}
                 </Typography>
               </div>
@@ -60,10 +66,10 @@ const Slider = () => {
                   Soren very company business under-full for adipisicing
                   eliterdo eiusmod tempor asem incididuntlabore dolore magna.
                 </Typography>
-                <Typography color="#1e1666" className="m-0">
+                <Typography textAlign="center" color="#1e1666" className="m-0">
                   Ira Melon
                 </Typography>
-                <Typography color="#2f1ed3" className="pb-3">
+                <Typography textAlign="center" color="#2f1ed3" className="pb-3">
                   CEO Founder
                 </Typography>
               </div>
@@ -75,10 +81,10 @@ const Slider = () => {
                   Soren very company business under-full for adipisicing
                   eliterdo eiusmod tempor asem incididuntlabore dolore magna.
                 </Typography>
-                <Typography color="#1e1666" className="m-0">
+                <Typography textAlign="center" color="#1e1666" className="m-0">
                   Ira Melon
                 </Typography>
-                <Typography color="#2f1ed3" className="pb-3">
+                <Typography textAlign="center" color="#2f1ed3" className="pb-3">
                   CEO Founder
                 </Typography>
               </div>
@@ -90,10 +96,10 @@ const Slider = () => {
                   Soren very company business under-full for adipisicing
                   eliterdo eiusmod tempor asem incididuntlabore dolore magna.
                 </Typography>
-                <Typography color="#1e1666" className="m-0">
+                <Typography textAlign="center" color="#1e1666" className="m-0">
                   Ira Melon
                 </Typography>
-                <Typography color="#2f1ed3" className="pb-3">
+                <Typography textAlign="center" color="#2f1ed3" className="pb-3">
                   CEO Founder
                 </Typography>
               </div>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const SliderStyle = styled.div`
   min-height: 200px;
+  margin: 0 auto;
   .swiper {
     z-index: 0;
   }

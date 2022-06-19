@@ -1,11 +1,12 @@
 import { useSelector } from "react-redux";
 import { AboutUsWrapper } from "./AboutUsStyle";
 import bg from "../../assets/img/aboutusBg.png";
-import seo from "../../assets/img/seo1.png";
+import seo from "../../assets/img/aboutImg.png";
 import { Container } from "react-bootstrap";
 import Typography from "../Typography/Typography";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import Image from "next/image";
+import { HeaderTitle } from "../../styles/GlobalStyle";
 const AboutUs = () => {
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
@@ -21,9 +22,9 @@ const AboutUs = () => {
             <Typography color="#2513d1" className="mb-1">
               {languageData.title_about}
             </Typography>
-            <Typography size="34px" color="#1e1666">
+            <HeaderTitle size="34px" color="#1e1666">
               {languageData.subTitle_about}
-            </Typography>
+            </HeaderTitle>
             <Typography color="#6a7c92" className="mt-3">
               {languageData.desc_goal_about}
             </Typography>
@@ -70,7 +71,12 @@ const AboutUs = () => {
             </ul>
           </div>
           <div className="col-lg-6 d-flex justify-content-center">
-            <Image src={seo} layout="fixed" alt="" />
+            <Image
+              src={seo}
+              layout="intrinsic"
+              alt=""
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </div>
       </Container>

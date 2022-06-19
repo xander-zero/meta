@@ -4,10 +4,13 @@ import { StrategiesWrapper } from "./StrategiesStyle";
 import s1 from "../../assets/img/strategy1.jpg";
 import s2 from "../../assets/img/strategy2.jpg";
 import s3 from "../../assets/img/strategy3.jpg";
+import s4 from "../../assets/img/photo_2022-06-19_14-58-34.jpg";
+
 import { Container } from "react-bootstrap";
 import Typography from "../Typography/Typography";
 import { MdOutlineVideoSettings } from "react-icons/md";
 import { useSelector } from "react-redux";
+import { HeaderTitle } from "../../styles/GlobalStyle";
 
 const Strategies = () => {
   const languageSelector = useSelector((state) => state.language);
@@ -26,7 +29,7 @@ const Strategies = () => {
               <Typography color="#2513d1" className="mb-1">
                 {languageData.title_service}
               </Typography>
-              <Typography size="34px" color="#1e1666">
+              <HeaderTitle size="34px" color="#1e1666">
                 {text === "crm"
                   ? languageData.title_crm_service
                   : text === "account"
@@ -36,7 +39,7 @@ const Strategies = () => {
                   : text === "mangeContent"
                   ? languageData.title_mangeContent_service
                   : ""}
-              </Typography>
+              </HeaderTitle>
               <Typography color="#6a7c92">
                 {text === "crm"
                   ? languageData.desc_crm_service
@@ -56,7 +59,7 @@ const Strategies = () => {
               <div className="col-6 ">
                 <div className="cart " onClick={() => setText("crm")}>
                   <Image
-                    src={s1}
+                    src={s4}
                     alt="Picture of the author"
                     layout="intrinsic"
                   />

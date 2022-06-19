@@ -1,7 +1,7 @@
 import Typography from "../Typography/Typography";
 import { CardContent, CardImg, Icon, Space } from "./cardStyle";
 
-const Card = ({ icon, title, desc, bgColor, color }) => {
+const Card = ({ icon, title, desc, bgColor, color, textAlign }) => {
   return (
     <CardContent bgColor={bgColor}>
       <CardImg>
@@ -12,7 +12,7 @@ const Card = ({ icon, title, desc, bgColor, color }) => {
           {title}
         </Typography>
       </Space>
-      <Typography size="12px" weight="400" color={color}>
+      <Typography size="12px" weight="400" color={color} textAlign={textAlign}>
         {desc}
       </Typography>
     </CardContent>

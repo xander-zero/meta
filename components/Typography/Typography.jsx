@@ -27,7 +27,7 @@ const Text = styled.p`
   color: ${({ color }) => color};
   font-weight: ${({ weight }) => weight};
   font-size: ${({ size }) => size};
-  text-align: ${({ textAlign }) => (textAlign ? textAlign : "")};
+  text-align: ${({ textAlign }) => (textAlign ? textAlign : "justify")};
   font-family: ${({ en }) => (en ? "Arial" : "IRANSans")};
 `;
 

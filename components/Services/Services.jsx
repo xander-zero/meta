@@ -87,7 +87,12 @@ const Services = () => {
         </Typography>
       </Row>
       <Wrapper postion="space-between" className="container">
-        <CardList bgColor="#FFFFFF" items={items} color="#1e1666" />
+        <CardList
+          textAlign="center"
+          bgColor="#FFFFFF"
+          items={items}
+          color="#1e1666"
+        />
       </Wrapper>
     </ServiceStyle>
   );
