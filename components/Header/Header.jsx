@@ -40,6 +40,7 @@ const Header = () => {
 
   return (
     <HeaderStyle
+      id="home"
       image={HeaderImg}
       navbgColor={scrollPosition !== 0 ? "#2513d1" : "transparent"}
     >

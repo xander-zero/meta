@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import InputField from "../InputField/InputField";
 import Button from "../../components/Button/Button";
 import SwitchToggle from "../SwitchToggle/SwitchToggle";
@@ -9,6 +10,10 @@ import Typography from "../Typography/Typography";
 import login from "../../assets/img/login.jpg";
 const Login = () => {
   const [type, setType] = useState("login");
+
+  const languageSelector = useSelector((state) => state.language);
+  const { languageData } = languageSelector;
+
   return (
     <LoginWrapper>
       <div className="login-wrapper">
@@ -30,7 +35,7 @@ const Login = () => {
             </div>
             <div className="w-100 mt-5">
               <Typography color="#000" className="mb-0">
-                ثبت نام در به سود
+                {languageData?.login_title}
               </Typography>
             </div>
             <div className="row mt-2">
@@ -48,13 +53,23 @@ const Login = () => {
                 </>
               )}
               <div className="col-12">
-                <InputField placeholder="09351234567" label="شماره تماس" />
+                <InputField
+                  placeholder="09351234567"
+                  label={languageData.login_label_phonenumber}
+                />
               </div>
               <div className="col-12">
-                <InputField placeholder="******" label="رمز عبور" />
+                <InputField
+                  placeholder="******"
+                  label={languageData.login_label_password}
+                />
               </div>
               <div className="col-12">
-                <Button>{type === "login" ? "ورود" : "ثبت نام"}</Button>
+                <Button>
+                  {type === "login"
+                    ? languageData.login_label_button
+                    : languageData.singin_label_button}
+                </Button>
               </div>
             </div>
           </div>

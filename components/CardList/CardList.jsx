@@ -4,7 +4,6 @@ import Card from "../Card/Card";
 
 const CardList = ({ items, bgColor, color }) => {
   const authSelector = useSelector((state) => state.auth);
-  console.log(authSelector);
 
   return (
     <>

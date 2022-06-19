@@ -14,7 +14,7 @@ const AboutUs = () => {
     return <h1>Loading...</h1>;
   }
   return (
-    <AboutUsWrapper image={bg}>
+    <AboutUsWrapper image={bg} id="about">
       <Container>
         <div className="row mt-5">
           <div className="col-lg-6">

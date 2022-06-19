@@ -11,7 +11,7 @@ const Support = () => {
   const { languageData } = languageSelector;
 
   return (
-    <SupportWrapper>
+    <SupportWrapper id="support">
       <Container>
         <div className="row mt-5">
           <div className="col-lg-6 d-flex justify-content-center">
@@ -29,7 +29,7 @@ const Support = () => {
             </Typography>
             <div className="d-flex justify-content-evenly w-100">
               <div>
-                <Typography size="20px" color="#1E1666">
+                <Typography en size="20px" color="#1E1666">
                   2451 M
                 </Typography>
                 <Typography size="14px" color="#1E1666">
@@ -37,7 +37,7 @@ const Support = () => {
                 </Typography>
               </div>
               <div>
-                <Typography size="20px" color="#1E1666">
+                <Typography en size="20px" color="#1E1666">
                   124 M
                 </Typography>
                 <Typography size="14px" color="#1E1666">
@@ -45,7 +45,7 @@ const Support = () => {
                 </Typography>
               </div>
               <div>
-                <Typography size="20px" color="#1E1666">
+                <Typography en size="20px" color="#1E1666">
                   1240 K
                 </Typography>
                 <Typography size="14px" color="#1E1666">

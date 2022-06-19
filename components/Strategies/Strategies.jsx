@@ -14,17 +14,15 @@ const Strategies = () => {
   const { languageData } = languageSelector;
   const [text, setText] = useState("crm");
 
-  console.log(text);
-
   if (!languageData) {
     return <h1>Loading...</h1>;
   }
   return (
-    <StrategiesWrapper>
+    <StrategiesWrapper id="strategies">
       <Container>
         <div className="row m-0 p-0">
           <div className="col-lg-6 col-12 d-flex align-items-center mt-5">
-            <div>
+            <div className="scale-up-center">
               <Typography color="#2513d1" className="mb-1">
                 {languageData.title_service}
               </Typography>

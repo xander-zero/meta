@@ -4,6 +4,10 @@ export const NavbarWrapper = styled.div`
   width: 100%;
   z-index: 1;
 
+  a {
+    font-size: 15px;
+  }
+
   /* .ms-auto{
     background-color
   } */
