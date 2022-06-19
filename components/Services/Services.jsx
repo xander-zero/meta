@@ -28,7 +28,7 @@ const Services = () => {
         />
       ),
       title: languageData.service_one_pannel,
-      desc: "IT Consultancy for your company is great the support all time 24/7, easy composition for install and all image included",
+      desc: languageData.service_one_pannel_desc,
     },
     {
       id: "2",
@@ -36,7 +36,7 @@ const Services = () => {
         <HiOutlineMail color="#fff" style={{ fontWeight: "bold" }} size={20} />
       ),
       title: languageData.service_two_pannel,
-      desc: "IT Consultancy for your company is great the support all time 24/7, easy composition for install and all image included",
+      desc: languageData.service_two_pannel_desc,
     },
     {
       id: "3",
@@ -44,7 +44,7 @@ const Services = () => {
         <HiOutlinePhone color="#fff" style={{ fontWeight: "bold" }} size={20} />
       ),
       title: languageData.service_three_pannel,
-      desc: "IT Consultancy for your company is great the support all time 24/7, easy composition for install and all image included",
+      desc: languageData.service_three_pannel_desc,
     },
     {
       id: "4",
@@ -56,7 +56,7 @@ const Services = () => {
         />
       ),
       title: languageData.service_four_pannel,
-      desc: "IT Consultancy for your company is great the support all time 24/7, easy composition for install and all image included",
+      desc: languageData.service_four_pannel_desc,
     },
     {
       id: "5",
@@ -64,7 +64,7 @@ const Services = () => {
         <HiOutlineMail color="#fff" style={{ fontWeight: "bold" }} size={20} />
       ),
       title: languageData.service_five_pannel,
-      desc: "IT Consultancy for your company is great the support all time 24/7, easy composition for install and all image included",
+      desc: languageData.service_five_pannel_desc,
     },
     {
       id: "6",
@@ -72,7 +72,7 @@ const Services = () => {
         <HiOutlinePhone color="#fff" style={{ fontWeight: "bold" }} size={20} />
       ),
       title: languageData.service_six_pannel,
-      desc: "IT Consultancy for your company is great the support all time 24/7, easy composition for install and all image included",
+      desc: languageData.service_six_pannel_desc,
     },
   ];
 
