@@ -75,7 +75,7 @@ const AboutUs = () => {
               src={seo}
               layout="intrinsic"
               alt=""
-              style={{ objectFit: "cover" }}
+              // style={{ objectFit: "cover" }}
             />
           </div>
         </div>
